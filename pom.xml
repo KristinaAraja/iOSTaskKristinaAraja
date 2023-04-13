@@ -14,8 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>yyyy-MMM-dd_HH-mm-ss</maven.build.timestamp.format>
-        <sureFireDir>${project.basedir}/TestRunReports/Android/${timestamp}</sureFireDir>
-        <device_name>"iPhone 14 Pro Max"</device_name>
+        <sureFireDir>${project.basedir}/TestRunReports/iOS/${timestamp}</sureFireDir>
+        <device_name>${device_name}</device_name>
     </properties>
 
     <build>
@@ -35,7 +35,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>AndroidRegression.xml</suiteXmlFile>
+                        <suiteXmlFile>RemindersRegression.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <environmentVariables>
                         <device_name>${device_name}</device_name>
